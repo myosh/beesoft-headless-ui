@@ -20,7 +20,7 @@ const ItemScroller = ({
 
   const currentPage = useRef(1);
   const totalPages = useRef(0);
-  const nextPageIndex = useRef<number>(null);
+  const nextPageIndex = useRef<number | null>(null);
   const loadedData = useRef<JsonData>([]);
   const calculatedRenderPages = useRef<Record<string, JsonData>>({});
   const pageHeights = useRef<Record<number, number>>({});
